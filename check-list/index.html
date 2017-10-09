@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Check list</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  </head>
+  <body>
+    <h1> Check List </h1>
+      <div id="hide">
+          <h3>This is hopefully a nice check out list thingy.</h3>
+          <p id = 'remove'>First things first, hit the button</p>
+          <input type="text" id='name'>
+          <button id='try-it'onclick = "nameFunction()"> go on try it </button>
+           <p id='yourname'></p> 
+
+           <p> if you're not happy with your name you can just hit that name change button again </p>
+       <button onclick = "hideFunction()"> happy with name </button>
+      </div>
+    
+     </br>
+    <h3 id='yourname'></h3>
+      
+     
+<div class="inbox">
+    <div class="item">
+      <input type="checkbox">
+      <p>This is an inbox layout.</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check one item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Hold down your Shift key</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Check a lower item</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Everything inbetween should also be set to checked</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Try do it with out any libraries</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Just regular JavaScript</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Good Luck!</p>
+    </div>
+    <div class="item">
+      <input type="checkbox">
+      <p>Don't forget to tweet your result!</p>
+    </div>
+  </div>
+  </body>
+
+  <script>
+    //updates user name
+    function nameFunction() {
+      var username = document.getElementById('name').value;
+      if(username != null) {
+        document.getElementById('try-it').innerHTML = "Change your name";
+        document.getElementById('remove').innerHTML = "Hello " + username + "! How are you today? ";
+      } else if(username != username) {
+          document.getElementById('yourname').innerHTML.clear();
+        }
+      }
+    //function hides the name change section
+    function hideFunction() {
+    var x = document.getElementById('hide');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+
+    
+  </script>
+</html>
