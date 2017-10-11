@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
     styles: [`
     .danger {
       background-color: green;
+      border-line: 1px;
     }
   `]
 })
 
 export class SuccessComponent {
-    
+
 }
