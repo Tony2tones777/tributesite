@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-fluid">
+            <div id="weather">
+                
+                <h1>{{ title }} App</h1> 
+                <div>
+                    <p > Your current location is:</p>
+                    <div v-on"">Time: </div>
+                    <pre> {{ $data | json }}</pre>
+                </div>
+                <button v-on="click:ready" class="btn btn-primary"> Get Location </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.11.10/vue.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
